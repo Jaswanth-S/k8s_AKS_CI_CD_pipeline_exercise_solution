@@ -1,0 +1,40 @@
+#Define deployment by using the service-app image pushed to Docker Hub
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-deployment
+  labels:
+    stackroute.k8: springboot-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      stackroute.k8: springboot-deployment
+  template:
+    metadata:
+      labels:
+        stackroute.k8: springboot-deployment
+    spec:
+      containers:
+        - name: springbootrestservice
+          image: jaswanth1234/service-app:latest
+          ports:
+            - containerPort: 8080
+
+---
+#Define service of type LoadBalancer, name: springboot-svc, targetPort:8080 and port: 8080.
+apiVersion: v1
+kind: Service
+metadata:
+  name: springboot-svc
+  labels:
+    stackroute.k8: springboot-svc
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+  selector:
+    stackroute.k8: springboot-deployment
+
