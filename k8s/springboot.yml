@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: springbootrestservice
-          image: jaswanth1234/service-app:latest
+          image: jaswanthacr.azurecr.io/sb-ci-cd-app:latest
           ports:
             - containerPort: 8080
 
