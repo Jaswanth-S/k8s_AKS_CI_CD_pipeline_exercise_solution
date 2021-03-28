@@ -9,9 +9,9 @@ Refer the PROBLEM.md file for problem description.
 
 2. **CLONE** the forked repository, containing the boilerplate in your local machine
      
-3. Navigate to maincourse_java_jfse_mc05_k8s_AKS_CI_CD_pipeline_exercise_solutionfolder
+3. Navigate to k8s_AKS_CI_CD_pipeline_exercise_solutionfolder
 
-    `cd maincourse_java_jfse_mc05_k8s_AKS_CI_CD_pipeline_exercise_solution`
+    `cd k8s_AKS_CI_CD_pipeline_exercise_solution`
 
 4. Check the status of your repository
      
@@ -34,12 +34,3 @@ Refer the PROBLEM.md file for problem description.
 9. Submit your solution on Hobbes
 
 
-### Important instructions for Participants
-> - We expect you to write the assignment on your own by following through the guidelines, learning plan, and the practice exercises
-> - The code must not be plagiarized, the mentors will randomly pick the submissions and may ask you to explain the solution
-> - The code must be properly indented, code structure maintained as per the boilerplate and properly commented
-> - Follow through the problem statement shared with you
-
-### MENTORS TO BEGIN REVIEW YOUR WORK ONLY AFTER ->
-> - You add the respective Mentor as a Reporter/Master into your Assignment Repository
-> - Intimate your Mentor on Slack and/or Send an Email to learner.support@stackroute.in - with your Git URL - Once you done working and is ready for final submission.
